@@ -47,7 +47,7 @@ def get_args():
     parser.add_argument('--pooling', default='max', choices=['max', 'lip1'], help='Pooling layer')
     parser.add_argument('--num-layers', default=5, type=int, choices=[5, 10, 15, 20, 25, 30, 35, 40], 
                         help='number of layers per block in the LipConvnet network')
-    parser.add_argument('--last-layer', default='ortho', choices=['ortho', 'linear', 'lln', 'crc_full'], 
+    parser.add_argument('--last-layer', default='ortho', choices=['ortho', 'lln', 'crc_full'], 
                         help='last layer that maps features to logits')
     
     # Dataset specifications
